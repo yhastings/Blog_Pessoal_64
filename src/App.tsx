@@ -14,6 +14,8 @@ import DeletarTema from './compenents/temas/deletarTema/DeletarTema';
 import ListaPostagem from './compenents/postagens/listaPostagem/ListaPostagem';
 import { Provider } from 'react-redux';
 import store from './store/store';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 
 
@@ -21,6 +23,7 @@ import store from './store/store';
 function App() {
   return (
     <Provider store={store}>
+      <ToastContainer />
     <Router>
       <Navbar />
 
